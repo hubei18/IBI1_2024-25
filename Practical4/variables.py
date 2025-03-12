@@ -13,10 +13,11 @@ bus is quicker than drive
 
 X=True
 Y=False
+
 '''
 Truth table for 'and'             Truth table for 'or'
 X      Y     W                    X     Y     W
 True  True  True                  True  True  True
-True  False False                 True  Fa;se True
+True  False False                 True  False True
 False False False                 False False False
 '''
