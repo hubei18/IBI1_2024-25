@@ -1,14 +1,15 @@
 # import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 
 # set variables for beta, gamma and times
-beta = float(input('beta'))
-gamma = float(input('gamma'))
+beta = float(input('beta = '))
+gamma = float(input('gamma= '))
 times = 100
 
 # make population map
-size=int(input('size'))
+size=int(input('size = '))
 population=np.zeros((size,size))
 
 # create outbreak
@@ -53,9 +54,10 @@ for time in range(1,times+1):
 # draw plot with 6 subplots
 fig,axs=plt.subplots(2,3,dpi=150)
 axs=axs.ravel()
+cmap=ListedColormap(['purple', 'green', 'yellow'])
 for index,(time,present) in enumerate(saved):
     ax=axs[index]
-    ax.imshow(present,cmap='viridis',interpolation='nearest')
+    ax.imshow(present,cmap=cmap,vmin=0,vmax=2,interpolation='nearest')
     ax.set_title(f'{time} days')
     ax.axis('off')
 plt.tight_layout()
