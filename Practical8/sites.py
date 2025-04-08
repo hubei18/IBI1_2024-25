@@ -10,7 +10,7 @@ def find(sequence, enzyme):
         data=sequence[i:i+length]
         if data==enzyme:
             position.append(i)
-            i+=length+1
+            i+=length+1  # if the position hve been cut, skip the position
             continue
         i+=1
     return position
