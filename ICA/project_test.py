@@ -1,6 +1,7 @@
 import sys
 import matplotlib.pyplot as plt
 
+
 codon_table = {
 'UUU': 'Phe', 'UUC': 'Phe', 'UUA': 'Leu', 'UUG': 'Leu',
 'UCU': 'Ser', 'UCC': 'Ser', 'UCA': 'Ser', 'UCG': 'Ser',
@@ -101,6 +102,10 @@ def draw(sequence):
     plt.title("Codon Usage Distribution")
     plt.show()
 
+
+'''
+find codon bias for each amino acid
+'''
 def bias(sequence):
     codonbiascount = {
         'Phe': {'UUU': 0, 'UUC': 0},

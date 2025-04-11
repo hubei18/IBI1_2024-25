@@ -11,11 +11,11 @@ from random import randint
 from math import ceil
 
 progress=0
-while progress>=0:
+first_n=1
+second_n=0
+while first_n != second_n:
 	progress+=1
 	first_n = randint(1,6)
 	second_n = randint(1,6)
-	if first_n == second_n:
-		print(progress)
-		break
+print(progress)
 
