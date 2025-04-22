@@ -1,7 +1,7 @@
 import re 
 
 # open the file
-with open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r') as file :
+with open('Saccharomyces_cerevisiae.R64-1-1.cdna.fa','r') as file :
 
     # initialize the variables
     namelist=[]
@@ -43,8 +43,8 @@ with open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r') as file :
 with open('tata_genes.fa','w') as newfile:
     for i in range(1,len(typelist)):
         if typelist[i]==1:
-            newfile.write(f'>{namelist[i]}\n')
+            newfile.write('%s\n'%namelist[i])
             sequence=sequencelist[i]
             for j in range(0,len(sequence),60):
-                newfile.write(f'{sequence[j:j+60]}\n')
+                newfile.write('%s\n'%sequence[j:j+60])
 
