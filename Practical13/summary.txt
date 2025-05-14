@@ -1,0 +1,11 @@
+The length of SOD2 is 222 amino acids. 
+
+Its subcellular location is mitochondrion matrix. the matrix is the mitochondrion internal spaces enclosed by the inner membrane.
+
+The range of percentage identities in the reported online BLAST results is from 83.3 to 100.
+
+The results are listed below:
+    For human and mouse, the alignment score is 1097.0, the percentage of identical amino acids is 90.09009009009009
+    For human and random, the alignment score is -262.0, the percentage of identical amino acids is 3.6036036036036037        
+    For random and mouse, the alignment score is -258.0, the percentage of identical amino acids is 4.054054054054054
+The SOD2 in human and mouse get the highest alignment score and percentage, so they are most closely related.
